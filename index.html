@@ -1,0 +1,38 @@
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+<div id="container">
+    <div class="loading">
+        <i class="icon-spinner icon-spin icon-large"></i>
+        Loading data from Google Spreadsheets...
+    </div>
+</div>
+
+<div id="container">
+  <hr class="mySeparator">
+<div class="display-5 text-center">LATEST COVID 19 STATS</div>
+  <div class="APIContainer">
+    <div class="covidInput">
+      <p>Select a country:</p>
+      <input type= "text" id="countries">
+      <br><br>
+  <button id ="go" onclick="myFunction()">Click to see stats of this country</button>
+       
+    
+    </div>
+    <hr class="mySeparator">
+    <div class="text-center">
+      <p class="marginTopBottom" id="covidNewConfirmed">New Confirmed Cases: /</p>
+      <p class="marginTopBottom" id="covidTotalConfirmed">Total confirmed cases till date: /</p>
+      <p class="marginTopBottom" id="covidNewDeaths">New deaths: /</p>
+      <p class="marginTopBottom" id="covidTotalDeaths">Total deaths till date: /</p>
+      <p class="marginTopBottom" id="covidLastUpdate">Last updated on: /</p>
+      <hr class="mySeparator">
+    </div>
+  </div>
+</div>
